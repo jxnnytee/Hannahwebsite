@@ -1,4 +1,4 @@
-import { Box, Button, Center, Input, Text, Image, Textarea } from "@chakra-ui/react";
+import { Box, Button, Center, Input, Text, Textarea } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from '@emailjs/browser';
