@@ -11,8 +11,7 @@ import {
   useDisclosure,
   BoxProps,
   FlexProps,
-  VStack,
-  Divider,
+  VStack
 } from '@chakra-ui/react';
 import './Card.css'
 import { RiMenu2Line } from'react-icons/ri';
