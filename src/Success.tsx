@@ -1,72 +1,75 @@
-import { Box, Text, Center, Heading, Button, Image, Link } from "@chakra-ui/react"
-
-
+import { Box, Text, Center, Heading, Button, Link, Spinner } from "@chakra-ui/react";
+import { useState, useEffect } from "react";
 
 function Success() {
+  const [isLoading, setIsLoading] = useState(true);
 
-    return (
-    <Center 
-    id="success"
-    bgImg={'../images/mblur.jpg'}
-    bgRepeat={'none'} bgPos={'center'}
-    bgSize={'cover'}
-     minH={{ base:'100vh', md: '100vh'}}
-     
-     fontSize={'lg'}   fontFamily={'Poppins'} bgColor={'black'} w={'100%'}>
-        
-            <Box>
-        <Box p={5} >
-        <Heading  fontSize={{ base:'4xl', md: '7xl', lg: '8xl'}} 
-         color={'whitesmoke'}
-         fontFamily={'Poppins'}
-        
-        fontWeight={'bold'} >
-        CONFIRMED
-        </Heading>
-        <Center>
-            <Text mt={10} fontSize={'lg'} textShadow={'0px 0px 20px white'} color={'whitesmoke'}>Thank you for your booking. </Text>
-               
-            </Center>
-            <Center display={'block'}  fontSize={{ base:'md', md: '2xl', lg: '2xl' }}>
-            <Center>
-              
-                </Center>
-                
-            <Box p={5}>
-                <Link href="/">
-                <Button fontSize={{ base: '2xl', md: '5xl'}} fontWeight={'bold'} 
-      
-      color={'black'}
-      rounded={'12'}
-      
-      padding={{base: '30px', md: '50px 100px 50px 100px'}}
-      borderRadius={'full'}
-      _hover={{ bg: 'black', color: 'white' }}
-      
-      fontFamily={'Poppins'}>RETURN TO HOME</Button>
-        </Link>
-        <Box>
-            <Box pt={20}>
-                <Center>
-            <Image  w={10} h={20} src={'../images/downer.gif'} transform={'rotate(180deg)'} />
-            </Center>
-            </Box>
-        </Box>
-        </Box>
+  useEffect(() => {
+    // Simulate a loading time (e.g., fetch data or wait for images to load)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // 2 seconds loading time
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <Center minH="100vh" w="100%" bg="black">
+      {isLoading ? (
+        <Center minH="100vh" color="white">
+          <Spinner size="xl" color="pink.500" />
         </Center>
-          
-           
-            
+      ) : (
+        <Box
+          bgImg={'../images/nn.jpg'}
+          bgRepeat={'none'}
+          bgPos={'center'}
+          bgSize={'cover'}
+          minH={{ base: '100vh', md: '100vh' }}
+          fontSize={'lg'}
+          fontFamily={'Poppins'}
+          w={'100%'}
+        >
+          <Box>
+            <Box p={5} pt={100}>
+              <Heading
+                fontSize={{ base: '4xl', md: '7xl', lg: '8xl' }}
+                color={'whitesmoke'}
+                fontFamily={'Poppins'}
+                fontWeight={'bold'}
+                opacity={'0.7'}
+              >
+                CONFIRMED
+              </Heading>
+              <Center p={{base: 10, md: 10}}>
+                <Text mt={{base: 0, md: 0}} fontSize={{base: 'lg', md: '3xl'}}  color={'whitesmoke'}>
+                  Thank you for your booking
+                </Text>
+              </Center>
+              <Center display={'block'} fontSize={{ base: 'md', md: '2xl', lg: '2xl' }}>
+                <Box p={5}>
+                  <Link href="/">
+                    <Button
+                      fontSize={{ base: '2xl', md: '5xl' }}
+                      fontWeight={'bold'}
+                      color={'black'}
+                      rounded={'12'}
+                      padding={{ base: '30px', md: '50px 100px 50px 100px' }}
+                      borderRadius={'full'}
+                      _hover={{ bg: 'pink', color: 'white', border: 'none' }}
+                      fontFamily={'Poppins'}
+                    >
+                      RETURN TO HOME
+                    </Button>
+                  </Link>
+                </Box>
+              </Center>
+            </Box>
+          </Box>
         </Box>
-        
-
-    
-    </Box>
+      )}
     </Center>
-
-    )
-        
-
+  );
 }
 
 export default Success;
