@@ -28,7 +28,7 @@ function Hero() {
             )}
             {!isLoading && (
                 <Center 
-                    bgImg={'../images/hlb9.JPEG'}
+                    bgImg={'../images/hlb9-min.JPEG'}
                     mt={{ base: '-8', md: '-16' }}
                     bgRepeat={'none'} 
                     bgPos={'center'}
