@@ -22,7 +22,7 @@ function Hero() {
     return (
         <Box bgColor={'#4C3C3A'} maxW={'100%'}>
             {isLoading && (
-                <Center minH="100vh" bg="blackAlpha.700" color="white">
+                <Center minH="100vh"  color="white">
                     <Spinner size="xl" color="#A9876C" />
                 </Center>
             )}
@@ -32,6 +32,7 @@ function Hero() {
                     mt={{ base: '-8', md: '-16' }}
                     bgRepeat={'none'} 
                     bgPos={'center'}
+                    bgColor={'#4C3C3A'}
                     bgSize={'cover'}
                     minH={{ base: '100vh', md: '100vh' }} 
                     fontSize={'lg'} 

@@ -65,7 +65,7 @@ function Booking() {
                                             bgColor={'#A9876C'}
                                             padding={{ base: '30px', md: '50px 100px 50px 100px' }}
                                             borderRadius={'full'}
-                                            _hover={{ bg: 'brown', color: 'white', border: 'none' }}
+                                            _hover={{ bg: '#A9876C', color: 'white', border: 'none' }}
                                             fontFamily={'Poppins'}
                                         >
                                             BOOK NOW

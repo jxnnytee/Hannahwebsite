@@ -103,7 +103,7 @@ function Contact() {
                           type={'submit'}
                           padding={{ base: '30px', md: '50px 100px 50px 100px' }}
                           borderRadius={'full'}
-                          _hover={{ bg: 'pink.300', color: 'white', border: 'none' }}
+                          _hover={{ bg: '#A9876C', color: 'white', border: 'none' }}
                           fontFamily={'Poppins'}
                         >
                           SEND

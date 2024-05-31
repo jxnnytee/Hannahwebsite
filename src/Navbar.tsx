@@ -9,6 +9,7 @@ function Navbar() {
             fontFamily={'Poppins'} 
             bgColor={'transparent'} 
             w={'100%'}
+            mt={'auto'}
             position={'relative'}  // Ensure the Center element is properly positioned
             zIndex={10}  // Make sure the navbar is above other content
         >
