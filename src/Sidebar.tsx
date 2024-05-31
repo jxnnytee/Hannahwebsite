@@ -7,7 +7,6 @@ import {
   Link,
   Drawer,
   DrawerContent,
-  Text,
   useDisclosure,
   BoxProps,
   FlexProps,
