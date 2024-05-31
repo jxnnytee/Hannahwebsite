@@ -20,7 +20,7 @@ function Hero() {
     }, []);
 
     return (
-        <Box bgColor={'#4C3C3A'} maxW={'100%'}>
+        <Box mt={{base: '-8'}} bgColor={'#4C3C3A'} maxW={'100%'}>
             {isLoading && (
                 <Center minH="100vh"  color="white">
                     <Spinner size="xl" color="#A9876C" />
