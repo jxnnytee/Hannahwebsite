@@ -16,7 +16,7 @@ function Booking() {
     }, []);
 
     const openBookingPopup = () => {
-        window.open("https://hannahlondonbeauty.dayschedule.com/", "_blank");
+        window.open("https://hannahldnbeauty.dayschedule.com", "_blank");
     };
 
     return (
