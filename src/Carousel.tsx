@@ -30,16 +30,16 @@ export default function Carousel() {
 
   // These are the images used in the slide
   const cards = [
-    './images/hlb1.JPEG',
-    './images/hlb2.JPEG',
-    './images/hlb3.JPEG',
-    './images/hlb4.JPEG',
-    './images/hlb5.JPEG',
-    './images/hlb6.JPEG',
-    './images/hlb7.JPEG',
-    './images/hlb8.JPEG',
-    './images/hlb9.JPEG',
-    './images/hlb10.JPEG',
+    './images/hlb1-min.JPEG',
+    './images/hlb2-min.JPEG',
+    './images/hlb3-min.JPEG',
+    './images/hlb4-min.JPEG',
+    './images/hlb5-min.JPEG',
+    './images/hlb6-min.JPEG',
+    './images/hlb7-min.JPEG',
+    './images/hlb8-min.JPEG',
+    './images/hlb9-min.JPEG',
+    './images/hlb10-min.JPEG',
   ];
 
   return (
