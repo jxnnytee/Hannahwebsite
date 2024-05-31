@@ -36,11 +36,11 @@ function Contact() {
 
   return (
     <>
-      <Box bgColor={"black"} fontFamily={"Poppins"}>
+      <Box bgColor={'#4C3C3A'} mt={{base: '-8', md: '-20'}} fontFamily={"Poppins"}>
         <Center>
           {isLoading ? (
             <Center minH="100vh" color="white">
-              <Spinner size="xl" color="pink.500" />
+              <Spinner size="xl" color="#A9876C" />
             </Center>
           ) : (
             <Box
@@ -53,14 +53,13 @@ function Contact() {
               <Box px={{ base: 0, md: 500 }}>
                 <Text
                   fontFamily={"Poppins"}
-                  pt={70}
-                  color={"whitesmoke"}
+                  pt={120}
+                  color={'#A9876C'}
                   fontSize={"4xl"}
                   
                   opacity={0.9}
                                     fontWeight={"bold"}
-                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-        bgClip='text'
+                                    
                 >
                   GET IN TOUCH
                 </Text>
@@ -70,7 +69,7 @@ function Contact() {
                       w={"100%"}
                       borderRadius={20}
                       textAlign={"start"}
-                      color={"whitesmoke"}
+                      color={'#A9876C'}
                       bgColor={"transparent"}
                       p={5}
                       fontWeight={'bold'}
@@ -78,24 +77,20 @@ function Contact() {
                     >
                       <Text opacity={0.9}
                                     
-                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-        bgClip='text' fontWeight={'bold'} pb={1}>NAME</Text>
-                      <Input type="text" name="name" borderRadius={'full'} placeholder={"First Name"} />
+                                    fontWeight={'bold'} pb={1}>NAME</Text>
+                      <Input border={'2px solid #A9876C'} type="text" name="name" borderRadius={'full'} placeholder={"First Name"} />
                       <Text opacity={0.9}
                                     
-                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-        bgClip='text' pb={1} pt={5}>PHONE NUMBER</Text>
-                      <Input type="number" name="phonenumber" maxLength={11} borderRadius={'full'} placeholder={"Phone Number"} />
+                                    pb={1} pt={5}>PHONE NUMBER</Text>
+                      <Input border={'2px solid #A9876C'} type="number" name="phonenumber" maxLength={11} borderRadius={'full'} placeholder={"Phone Number"} />
                       <Text opacity={0.9}
                                     
-                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-        bgClip='text' pb={1} pt={5}>EMAIL</Text>
-                      <Input name="email" borderRadius={'full'} type="text" placeholder={"Email"} />
+                                    pb={1} pt={5}>EMAIL</Text>
+                      <Input border={'2px solid #A9876C'} name="email" borderRadius={'full'} type="text" placeholder={"Email"} />
                       <Text opacity={0.9}
                                     
-                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-        bgClip='text' pb={1} pt={5}>MESSAGE</Text>
-                      <Textarea name="message"  borderRadius={0}></Textarea>
+                                    pb={1} pt={5}>MESSAGE</Text>
+                      <Textarea border={'2px solid #A9876C'} name="message"  borderRadius={0}></Textarea>
                       <Center>
                         <Button
                           mt={70}
@@ -104,7 +99,7 @@ function Contact() {
                           color={'black'}
                           rounded={'12'}
                           value={'send'}
-                          bgColor={'pink'}
+                          bgColor={'#A9876C'}
                           type={'submit'}
                           padding={{ base: '30px', md: '50px 100px 50px 100px' }}
                           borderRadius={'full'}

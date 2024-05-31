@@ -20,10 +20,10 @@ function Hero() {
     }, []);
 
     return (
-        <Box maxW={'100%'}>
+        <Box bgColor={'#4C3C3A'} maxW={'100%'}>
             {isLoading && (
                 <Center minH="100vh" bg="blackAlpha.700" color="white">
-                    <Spinner size="xl" color="pink.500" />
+                    <Spinner size="xl" color="#A9876C" />
                 </Center>
             )}
             {!isLoading && (
@@ -41,11 +41,10 @@ function Hero() {
                         <Box p={5}>
                             <Heading 
                                 fontSize={{ base: '9xl', md: '7xl', lg: '300' }} 
-                                color={'white'}
+                                color={'whitesmoke'}
                                 animation={`${fadeIn} 2s`}
-                                opacity={'0.8'}
-                                bgGradient='linear(to-l, pink.100, whitesmoke)'
-                                bgClip='text'
+                                opacity={'0.67'}
+                                
                                 fontWeight={'bold'}
                             >
                                 HLB
@@ -57,10 +56,9 @@ function Hero() {
                                         <Text 
                                             fontWeight={'bold'}
                                             opacity={'0.8'}
-                                            bgGradient='linear(to-l, pink.300, pink.100)'
-                                            bgClip='text'
+                                            
                                             fontSize={{ base: '2xl', md: '6xl' }} 
-                                            color={'white'}
+                                            color={'whitesmoke'}
                                         >
                                             HANNAH LONDON BEAUTY
                                         </Text>
@@ -69,12 +67,11 @@ function Hero() {
                                 <Box p={5}>
                                     <Link href="/booking">
                                         <Button 
-                                            fontSize={{ base: '2xl', md: '5xl' }} 
+                                            fontSize={{ base: '3xl', md: '5xl' }} 
                                             fontWeight={'bold'}
-                                            color={'gray.700'}
+                                            color={'whitesmoke'}
                                             rounded={'12'}
-                                            bgGradient='linear(to-l, pink.100, whitesmoke)'
-                                            bgClip='border-box'
+                                            bgColor={'#4C3C3A'}
                                             opacity={'0.8'}
                                             padding={{ base: '30px', md: '50px 100px 50px 100px' }}
                                             borderRadius={'full'}

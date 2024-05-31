@@ -10,9 +10,11 @@ import {
   useDisclosure,
   BoxProps,
   FlexProps,
-  VStack
+  VStack,
+  Heading
 } from '@chakra-ui/react';
 import './Card.css'
+import './Sidebar.css'
 import { RiMenu2Line } from'react-icons/ri';
 
 
@@ -53,13 +55,14 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
-    bgGradient='linear(to-l, pink.100, whitesmoke)'
-    bgClip='border-box'
+      bgColor={'#C5A289'}
+    
       
       w={{ base: 'full', md: 60 }}
       pos="fixed"
       h="full"
       fontFamily={'Poppins'}
+      
       
       {...rest}>
       <Flex  h="20" 
@@ -68,25 +71,27 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       <CloseButton ml={0}  _hover={{
           
           border: 'none'
-        }} color={'black'} display={{ base: 'flex', md: 'none' }}  onClick={onClose} />
+        }} color={'#4C3C3A'}
+        opacity={'0.4'}  display={{ base: 'flex', md: 'none' }}  onClick={onClose} />
       
       
        
       </Flex>
-      <VStack   p={0}   fontSize={'3xl'} fontWeight={'bold'} textShadow={'0px 0px 0px white'} color={'black'}>
+      <VStack   p={0}   fontSize={'3xl'} fontWeight={'bold'} textShadow={'0px 0px 0px white'} color={'#4C3C3A'}>
+        <Heading border={'1px solid #4C3C3A'} p={10} mb={10} opacity={'0.6'} fontSize={'lg'}>HANNAH LONDON BEAUTY</Heading>
         
-        <Link opacity={'0.5'} _hover={{ color: 'pink'}} fontWeight={'bold'} pb={5} href="/">
+        <Link opacity={'0.9'} _hover={{ color: '#4C3C3A'}} color={'#4C3C3A'} fontWeight={'bold'} pb={5} href="/">
           
-          HOME
+          HOME 
         
         </Link>
        
-        <Link pt={2} opacity={'0.5'} fontWeight={'bold'} _hover={{ color: 'pink'}}  pb={5} href="/booking">
+        <Link pt={2} opacity={'0.9'} fontWeight={'bold'} color={'#4C3C3A'} _hover={{ color: '#4C3C3A'}}  pb={5} href="/booking">
           
           BOOK
         
         </Link>
-        <Link pt={2} opacity={'0.5'} fontWeight={'bold'} _hover={{ color: 'pink'}} href="/contact">
+        <Link pt={2} opacity={'0.9'} fontWeight={'bold'} color={'#4C3C3A'} _hover={{ color: '#4C3C3A'}} href="/contact">
           
           CONTACT
         
@@ -127,7 +132,8 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
           color: 'white',
           border: 'none'
         }}
-        color={'pink.200'}
+        color={'#A9876C'}
+        opacity={'0.7'}
         aria-label="open menu"
         icon={<RiMenu2Line />}
       />   

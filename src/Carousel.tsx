@@ -45,7 +45,7 @@ export default function Carousel() {
   return (
     <Box
       position={'relative'}
-      bgGradient='linear(to-l, pink.100, whitesmoke)'
+      bgGradient='linear(to-l, #4C3C3A, #4C3C3A)'
   bgClip='border-box'
       
       w={'100%'}

@@ -14,10 +14,10 @@ function Success() {
   }, []);
 
   return (
-    <Center minH="100vh" w="100%" bg="black">
+    <Center minH="100vh" w="100%" bg="#A9876C">
       {isLoading ? (
         <Center minH="100vh" color="white">
-          <Spinner size="xl" color="pink.500" />
+          <Spinner size="xl" color="#4C3C3A" />
         </Center>
       ) : (
         <Box
@@ -56,7 +56,7 @@ function Success() {
                       rounded={'12'}
                       padding={{ base: '30px', md: '50px 100px 50px 100px' }}
                       borderRadius={'full'}
-                      _hover={{ bg: 'pink', color: 'white', border: 'none' }}
+                      _hover={{ bg: '#4C3C3A', color: 'white', border: 'none' }}
                       fontFamily={'Poppins'}
                     >
                       RETURN TO HOME

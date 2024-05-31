@@ -17,18 +17,17 @@ function Navbar() {
                 
                     fontSize='sm' 
                     spacing={10}  // Adjust spacing for better appearance
-                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-                    bgClip='text'
+                    color={'white'}
                 >
-                    <Link href="/" _hover={{ textDecoration: 'none', color: 'pink' }}>
+                    <Link href="/" _hover={{ textDecoration: 'none', color: 'whitesmoke' }}>
                         <Text fontWeight={'bold'}>HOME</Text>
                     </Link>
                     <Divider h={'20px'} orientation="vertical" />
-                    <Link href="/booking" _hover={{ textDecoration: 'none', color: 'pink'}}>
+                    <Link href="/booking" _hover={{ textDecoration: 'none', color: 'whitesmoke'}}>
                         <Text fontWeight={'bold'}>BOOK</Text>
                     </Link>
                     <Divider h={'20px'} orientation="vertical" />
-                    <Link href="/contact" _hover={{ textDecoration: 'none', color: 'pink'}}>
+                    <Link href="/contact" _hover={{ textDecoration: 'none', color: 'whitesmoke'}}>
                         <Text fontWeight={'bold'}>CONTACT</Text>
                     </Link>
                 </HStack>

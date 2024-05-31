@@ -21,11 +21,11 @@ function Booking() {
 
     return (
         <>
-            <Box bgColor={'black'} bgClip='border-box' fontFamily={"Poppins"} mt={{ base: '-8', md: '-16' }}>
+            <Box bgColor={'#4C3C3A'}  fontFamily={"Poppins"} mt={{ base: '-8', md: '-16' }}>
                 <Center>
                     {isLoading ? (
                         <Center minH="100vh" color="white" >
-                            <Spinner size="xl" color="pink.500" />
+                            <Spinner size="xl" color="#A9876C" />
                         </Center>
                     ) : (
                         <Box
@@ -40,12 +40,11 @@ function Booking() {
                                 <Text
                                     fontFamily={"Poppins"}
                                     pt={10}
-                                    color={'whitesmoke'}
+                                    color={'#A9876C'}
                                     fontSize={"4xl"}
                                     opacity={0.9}
                                     fontWeight={"bold"}
-                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
-        bgClip='text'
+                                    
                                 >
                                     BOOKING
                                 </Text>
@@ -61,12 +60,12 @@ function Booking() {
                                             onClick={openBookingPopup}
                                             fontSize={{ base: '2xl', md: '5xl', lg: '5xl' }}
                                             fontWeight={'bold'}
-                                            color={'black'}
+                                            color={'#4C3C3A'}
                                             rounded={'12'}
-                                            bgColor={'pink'}
+                                            bgColor={'#A9876C'}
                                             padding={{ base: '30px', md: '50px 100px 50px 100px' }}
                                             borderRadius={'full'}
-                                            _hover={{ bg: 'pink.400', color: 'white', border: 'none' }}
+                                            _hover={{ bg: 'brown', color: 'white', border: 'none' }}
                                             fontFamily={'Poppins'}
                                         >
                                             BOOK NOW
