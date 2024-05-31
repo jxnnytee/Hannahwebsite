@@ -36,12 +36,12 @@ function Hero() {
             </Center>
             <Center display={'block'}  fontSize={{ base:'md', md: '2xl', lg: '2xl' }}>
             <Center>
-              <HStack borderBottom={'1px solid white'}  p={2} animation={`${fadeIn} 2s`} fontFamily={'serif'}  textShadow={'0px 0px 30px black'}>
-                <Text fontWeight={'normal'}
-                textShadow={'20px 0px 10px pink'}
+              <HStack  p={2} animation={`${fadeIn} 2s`} fontFamily={'Poppins'}  >
+                <Text fontWeight={'bold'}
+                opacity={'0.8'}
                 bgGradient='linear(to-l, pink.300, pink.100)'
   bgClip='text'
-                fontSize={{ base: 'lg', md: '4xl'}} color={'white'}>
+                fontSize={{ base: '2xl', md: '6xl'}} color={'white'}>
                     HANNAH LONDON BEAUTY
                 </Text>
                

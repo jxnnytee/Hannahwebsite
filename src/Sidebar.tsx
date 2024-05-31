@@ -70,27 +70,24 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           
           border: 'none'
         }} color={'black'} display={{ base: 'flex', md: 'none' }}  onClick={onClose} />
-      <Text fontFamily={'serif'} textShadow={'0px 0px 0px white'} color={'black'} fontSize="lg" mr={10} fontWeight="normal">
-        HANNAH LONDON BEAUTY
       
-      </Text>
       
        
       </Flex>
-      <VStack   p={50} fontFamily={'serif'} fontStyle={'italic'}  fontSize={'2xl'} textShadow={'0px 0px 0px white'} color={'black'}>
+      <VStack   p={0}   fontSize={'3xl'} fontWeight={'bold'} textShadow={'0px 0px 0px white'} color={'black'}>
         
-        <Link  fontWeight={'normal'} pb={5} href="/">
+        <Link opacity={'0.5'} _hover={{ color: 'pink'}} fontWeight={'bold'} pb={5} href="/">
           
           HOME
         
         </Link>
        
-        <Link pt={2} fontWeight={'normal'}  pb={5} href="/booking">
+        <Link pt={2} opacity={'0.5'} fontWeight={'bold'} _hover={{ color: 'pink'}}  pb={5} href="/booking">
           
           BOOK
         
         </Link>
-        <Link pt={2} fontWeight={'normal'} href="/contact">
+        <Link pt={2} opacity={'0.5'} fontWeight={'bold'} _hover={{ color: 'pink'}} href="/contact">
           
           CONTACT
         
