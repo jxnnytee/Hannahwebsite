@@ -24,7 +24,7 @@ function Booking() {
             <Box bgColor={'black'} bgClip='border-box' fontFamily={"Poppins"} mt={{ base: '-8', md: '-16' }}>
                 <Center>
                     {isLoading ? (
-                        <Center minH="100vh" color="white">
+                        <Center minH="100vh" color="white" >
                             <Spinner size="xl" color="pink.500" />
                         </Center>
                     ) : (
@@ -42,12 +42,18 @@ function Booking() {
                                     pt={10}
                                     color={'whitesmoke'}
                                     fontSize={"4xl"}
+                                    opacity={0.9}
                                     fontWeight={"bold"}
+                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
+        bgClip='text'
                                 >
                                     BOOKING
                                 </Text>
                                 <Text p={8} fontWeight={'light'} fontSize={{ base: 'sm', md: 'lg' }} color={'whitesmoke'}>
                                     Secure your spot by booking today. You will be redirected to the booking page.
+                                </Text>
+                                <Text mb={2} p={2} opacity={'0.6'} fontWeight={'normal'} fontSize={{ base: 'sm', md: 'sm' }} color={'whitesmoke'}>
+                                    (Please read important information below)
                                 </Text>
                                 <Center>
                                     <Box p={5}>

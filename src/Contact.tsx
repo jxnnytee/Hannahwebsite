@@ -56,7 +56,11 @@ function Contact() {
                   pt={70}
                   color={"whitesmoke"}
                   fontSize={"4xl"}
-                  fontWeight={"bold"}
+                  
+                  opacity={0.9}
+                                    fontWeight={"bold"}
+                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
+        bgClip='text'
                 >
                   GET IN TOUCH
                 </Text>
@@ -72,14 +76,26 @@ function Contact() {
                       fontWeight={'bold'}
                       h={"100%"}
                     >
-                      <Text fontWeight={'bold'} pb={1}>NAME</Text>
-                      <Input type="text" name="name" borderRadius={0} placeholder={"First Name"} />
-                      <Text pb={1} pt={5}>PHONE NUMBER</Text>
-                      <Input type="number" name="phonenumber" maxLength={11} borderRadius={0} placeholder={"Phone Number"} />
-                      <Text pb={1} pt={5}>EMAIL</Text>
-                      <Input name="email" borderRadius={0} type="text" placeholder={"Email"} />
-                      <Text pb={1} pt={5}>MESSAGE</Text>
-                      <Textarea name="message" borderRadius={0}></Textarea>
+                      <Text opacity={0.9}
+                                    
+                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
+        bgClip='text' fontWeight={'bold'} pb={1}>NAME</Text>
+                      <Input type="text" name="name" borderRadius={'full'} placeholder={"First Name"} />
+                      <Text opacity={0.9}
+                                    
+                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
+        bgClip='text' pb={1} pt={5}>PHONE NUMBER</Text>
+                      <Input type="number" name="phonenumber" maxLength={11} borderRadius={'full'} placeholder={"Phone Number"} />
+                      <Text opacity={0.9}
+                                    
+                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
+        bgClip='text' pb={1} pt={5}>EMAIL</Text>
+                      <Input name="email" borderRadius={'full'} type="text" placeholder={"Email"} />
+                      <Text opacity={0.9}
+                                    
+                                    bgGradient='linear(to-l, pink.100, whitesmoke)'
+        bgClip='text' pb={1} pt={5}>MESSAGE</Text>
+                      <Textarea name="message"  borderRadius={0}></Textarea>
                       <Center>
                         <Button
                           mt={70}
